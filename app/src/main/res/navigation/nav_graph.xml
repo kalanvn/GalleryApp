@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/launchFragment">
+
+    <fragment
+        android:id="@+id/launchFragment"
+        android:name="gamiya.net.galleryapp.LaunchFragment"
+        android:label="LaunchFragment"
+        tools:layout="@layout/fragment_launch">
+        <action
+            android:id="@+id/action_launchFragment_to_apodFragment"
+            app:destination="@id/apodFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/apodFragment"
+        android:name="gamiya.net.galleryapp.apod.ApodFragment"
+        android:label="ApodFragment"
+        tools:layout="@layout/fragment_apod"/>
+</navigation>
